@@ -10,8 +10,12 @@
 body{
     margin: 0;
     font-family: arial;
-    line-height: 1.5;
-    
+    line-height: 1.5;    
+}
+iframe{
+    width: 100%;
+    border: none;
+    height: 350px;
 }
 div.cover{
     
@@ -153,9 +157,14 @@ div.para-avec-ligne{
     height: 65px;
 }
 
-div.para-avec-ligne p, a{
+/*div.para-avec-ligne p, a{
     margin-top: 0;
     padding-left: 8px;
+}*/
+
+div.paragraphe{
+    height: 300px;
+    padding-left: 5px;
 }
 
 table.table{
@@ -275,3 +284,69 @@ div.Retour p{
     margin-top: 0px;   
 }
 
+/*Responsive design*/
+@media only screen and (max-width: 768px){
+    img.cover-profile{
+        height: 90x;
+        margin-top: 75px;
+    
+    }
+    
+    h1{
+        
+        font-size: 38px;
+        margin-top: 6px;
+        margin-bottom: 0;
+    }
+    
+    div.cover p{
+        
+        margin-top:2px;
+        font-size: 13px;
+    }
+    .section{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    div.section-grise1{
+       
+        padding-bottom: 30px;
+        
+        
+    }
+    div.section-grise1 p.p1{
+        font-size: 16px;        
+    }
+    .col40{
+        width: 100%;
+    }
+    
+    .col60{
+        width: 100%;   
+        padding-left: 0; 
+       
+    }
+    table.table{
+        width: 100%;
+        display: inline-block;
+    } 
+    div.carte-de-visite{
+        padding-left: 5px;
+        padding-right: 5px;
+        margin: 0px 0px;
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
+        height: 350px;
+        
+    }
+    p.titre-carte{
+       
+        font-size: 24px;
+        
+    }
+    iframe{
+        
+        height: 250px;   
+    }   
+    
+    
+}
